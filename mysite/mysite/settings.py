@@ -25,7 +25,7 @@ SECRET_KEY = 'n10#1!cx=s^w#-d^$o(vfypm2%-lxr!b4=nwxr33m^im)iig8q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['9a61c382.ngrok.io']
 
 
 # Application definition
@@ -119,3 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+X_FRAME_OPTIONS = 'ALLOWALL'
+
+XS_SHARING_ALLOWED_METHODS = ['POST','GET','OPTIONS', 'PUT', 'DELETE']
